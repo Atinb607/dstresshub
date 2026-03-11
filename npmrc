@@ -1,0 +1,2 @@
+# Ensures devDependencies are installed in all environments including Vercel
+NODE_ENV=development
