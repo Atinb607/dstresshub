@@ -3,12 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'"
   },
   "dependencies": {
-    "@vercel/speed-insights": "^2.0.0",
-    "vite": "^7.3.1"
+    "@vercel/analytics": "^2.0.1"
   }
 }
