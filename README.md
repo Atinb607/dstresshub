@@ -1,7 +1,6 @@
-# 😄 LaughLife — Wix Template Replica (Vite)
+# 😄 Dstresshub
 
-A faithful replication of the **Wix Yoga Studio Template #3547**, redesigned for your 
-**Laughter Therapy & Stress Relief** business. Pure HTML/CSS/JS inside a Vite project.
+A faithful replication  redesigned for your **Laughter Therapy & Stress Relief** business. Pure HTML/CSS/JS inside a Vite project.
 
 ---
 
