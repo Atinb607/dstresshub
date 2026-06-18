@@ -7,7 +7,6 @@ import { refreshCursorHovers } from '../components/cursor.js'
 import { waLink, toast } from '../utils/helpers.js'
 import { submitLead } from '../supabase.js'
 
-import tataLogo from './Tata-Logo.png'
 import tanishqLogo from './tanishq-seeklogo.svg'
 import rootsLogo from './roots-analysis-logo.png'
 import icueriousLogo from './icuerious-logo.jpg'
@@ -139,7 +138,6 @@ export async function homePage() {
       <div class="logo-inner reveal up">
         ${sectionHeader({ tag: 'Trusted By', title: 'Leading organizations<br/><em>choose DStressHub.</em>', theme: 'light' })}
         <div class="logo-grid">
-          <div class="logo-item"><img src="${tataLogo}" alt="Tata Groups"></div>
           <div class="logo-item"><img src="${tanishqLogo}" alt="Tanishq"></div>
           <div class="logo-item"><img src="${rootsLogo}" alt="Roots Analysis"></div>
           <div class="logo-item"><img src="${icueriousLogo}" alt="ICuerious"></div>
