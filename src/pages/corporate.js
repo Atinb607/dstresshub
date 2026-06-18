@@ -145,7 +145,7 @@ export async function corporatePage() {
         const size = document.getElementById('c-size').value
         const msg = document.getElementById('c-msg').value
 
-        const waText = `Hi DStressHub! I'd like to request a Corporate Proposal.
+        const waText = `Hi DeStressHub! I'd like to request a Corporate Proposal.
 *Name:* ${name}
 *Company:* ${company}
 *Team Size:* ${size}

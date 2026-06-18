@@ -1,4 +1,4 @@
-# 😄 Dstresshub
+# 😄 DeStressHub
 
 A faithful replication  redesigned for your **Laughter Therapy & Stress Relief** business. Pure HTML/CSS/JS inside a Vite project.
 

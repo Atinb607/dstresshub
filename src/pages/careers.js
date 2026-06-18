@@ -15,7 +15,7 @@ export async function careersPage() {
       return `
         <div class="jobs-empty reveal up">
           <p style="margin-bottom:16px;">We don't have open positions right now, but we're always looking for passionate people. Drop us a message!</p>
-          <a href="${waLink('Hi! I am interested in future opportunities at DStressHub.')}" target="_blank" class="btn-outline">Say Hello</a>
+          <a href="${waLink('Hi! I am interested in future opportunities at DeStressHub.')}" target="_blank" class="btn-outline">Say Hello</a>
         </div>
       `
     }
@@ -50,7 +50,7 @@ export async function careersPage() {
           <div class="eyebrow-line"></div>
           <span class="eyebrow-text">Join Our Mission</span>
         </div>
-        <h1 class="reveal d2">Join <em>DStressHub</em></h1>
+        <h1 class="reveal d2">Join <em>DeStressHub</em></h1>
         <p class="hero-sub reveal d3">Help us build happier, healthier workplaces through wellness, laughter, and emotional wellbeing.</p>
         <a href="#positions" class="btn-gold reveal d4">View Open Positions</a>
       </div>
@@ -59,7 +59,7 @@ export async function careersPage() {
     <!-- Why Work With Us -->
     <section class="why-section">
       <div class="max-w reveal up">
-        ${sectionHeader({ tag: 'Why DStressHub', title: 'More than a job,<br/><em>a purpose.</em>', theme: 'light' })}
+        ${sectionHeader({ tag: 'Why DeStressHub', title: 'More than a job,<br/><em>a purpose.</em>', theme: 'light' })}
       </div>
       <div class="why-grid">
         <div class="why-card reveal up d1">
@@ -89,7 +89,7 @@ export async function careersPage() {
     <section class="positions-section" id="positions">
       <div class="positions-inner">
         <div class="reveal up">
-          ${sectionHeader({ tag: 'Open Positions', title: 'Find your role<br/><em>at DStressHub.</em>', theme: 'dark' })}
+          ${sectionHeader({ tag: 'Open Positions', title: 'Find your role<br/><em>at DeStressHub.</em>', theme: 'dark' })}
         </div>
         ${renderJobs()}
       </div>
@@ -124,7 +124,7 @@ export async function careersPage() {
             <div class="step-n">04</div>
             <div class="step-icon">🎉</div>
             <div class="step-title">Offer Letter</div>
-            <div class="step-desc">Welcome to the DStressHub family!</div>
+            <div class="step-desc">Welcome to the DeStressHub family!</div>
           </div>
         </div>
       </div>
@@ -138,7 +138,7 @@ export async function careersPage() {
         </div>
         <div class="testi-grid">
           <div class="testi-card reveal up d1">
-            <div class="testi-text">"Joining DStressHub was the best career decision. Every day I help people rediscover joy, that's incredibly fulfilling."</div>
+            <div class="testi-text">"Joining DeStressHub was the best career decision. Every day I help people rediscover joy, that's incredibly fulfilling."</div>
             <div class="testi-author">
               <div class="testi-avatar">A</div>
               <div>

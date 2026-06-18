@@ -104,7 +104,7 @@ export async function homePage() {
         <div class="about-text reveal right d2">
           ${sectionHeader({ tag: 'Our Philosophy', title: 'We believe joy<br/>is the <em>deepest</em><br/>form of healing.', theme: 'dark' })}
           <div class="about-divider"></div>
-          <p class="body">In today's fast-paced corporate world, stress isn't just inevitable, it's epidemic. DStressHub was founded with a singular mission: to reintroduce genuine joy and emotional resilience into the workplace and everyday life through the scientifically proven benefits of laughter therapy.</p>
+          <p class="body">In today's fast-paced corporate world, stress isn't just inevitable, it's epidemic. DeStressHub was founded with a singular mission: to reintroduce genuine joy and emotional resilience into the workplace and everyday life through the scientifically proven benefits of laughter therapy.</p>
           <div class="about-divider" style="margin:32px 0;"></div>
           <div class="about-features">
             <div class="feat-row">
@@ -136,7 +136,7 @@ export async function homePage() {
     <!-- Client Logos -->
     <section class="logo-section">
       <div class="logo-inner reveal up">
-        ${sectionHeader({ tag: 'Trusted By', title: 'Leading organizations<br/><em>choose DStressHub.</em>', theme: 'light' })}
+        ${sectionHeader({ tag: 'Trusted By', title: 'Leading organizations<br/><em>choose DeStressHub.</em>', theme: 'light' })}
         <div class="logo-grid">
           <div class="logo-item"><img src="${tanishqLogo}" alt="Tanishq"></div>
           <div class="logo-item"><img src="${rootsLogo}" alt="Roots Analysis"></div>
@@ -675,7 +675,7 @@ export async function homePage() {
           </div>
           <div class="review-card reveal up d3">
             <div class="review-stars">★★★★★</div>
-            <div class="review-text">"Loved it Rajat. The DstressHub team visited our office and lightened the day for us! Kudos to Rajat"</div>
+            <div class="review-text">"Loved it Rajat. The DeStressHub team visited our office and lightened the day for us! Kudos to Rajat"</div>
             <div class="review-author">
               <strong>Gaurav Chaudhary</strong>
               <span style="display:block; font-size:.72rem; margin-top:4px; opacity:0.7;">CEO at Roots Analysis</span>
@@ -899,7 +899,7 @@ export async function homePage() {
         toast('Assessment request submitted! Redirecting to WhatsApp...', 'success')
         
         // Build WhatsApp message
-        const msg = `Hi DStressHub! I just submitted a Free Stress Audit request.
+        const msg = `Hi DeStressHub! I just submitted a Free Stress Audit request.
 *Name:* ${name}
 *Organization:* ${org}
 *Team Size:* ${size}

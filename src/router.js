@@ -1,5 +1,5 @@
 /**
- * DStressHub — Client-side SPA Router
+ * DeStressHub — Client-side SPA Router
  * Uses History API for clean URLs with popstate handling
  */
 

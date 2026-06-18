@@ -1,5 +1,5 @@
 -- ============================================================
--- DStressHub — Supabase Database Schema
+-- DeStressHub — Supabase Database Schema
 -- Run this in the Supabase SQL Editor (Dashboard → SQL Editor)
 -- ============================================================
 

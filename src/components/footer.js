@@ -7,7 +7,7 @@ export function renderFooter() {
     <footer>
       <div class="footer-inner">
         <div>
-          <img src="/logo.png" alt="DStressHub" class="footer-logo-img">
+          <img src="/logo.png" alt="DeStressHub" class="footer-logo-img">
           <p class="footer-tagline">Healing through laughter — one joyful session at a time.</p>
           <div class="footer-socials">
             <a href="#" class="social-btn" aria-label="X (Twitter)"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
@@ -42,7 +42,7 @@ export function renderFooter() {
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© ${new Date().getFullYear()} DStressHub. All rights reserved.</p>
+        <p>© ${new Date().getFullYear()} DeStressHub. All rights reserved.</p>
         <p>All sessions conducted by certified laughter yoga practitioners.</p>
       </div>
     </footer>

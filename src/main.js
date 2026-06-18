@@ -1,5 +1,5 @@
 /**
- * DStressHub — Main Application Entry
+ * DeStressHub — Main Application Entry
  * Imports styles, registers routes, and initializes the SPA
  */
 
