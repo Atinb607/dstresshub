@@ -59,7 +59,7 @@ export async function careersPage() {
     <!-- Why Work With Us -->
     <section class="why-section">
       <div class="max-w reveal up">
-        ${sectionHeader({ tag: 'Why DStressHub', title: 'More than a job —<br/><em>a purpose.</em>', theme: 'light' })}
+        ${sectionHeader({ tag: 'Why DStressHub', title: 'More than a job,<br/><em>a purpose.</em>', theme: 'light' })}
       </div>
       <div class="why-grid">
         <div class="why-card reveal up d1">
@@ -138,7 +138,7 @@ export async function careersPage() {
         </div>
         <div class="testi-grid">
           <div class="testi-card reveal up d1">
-            <div class="testi-text">"Joining DStressHub was the best career decision. Every day I help people rediscover joy — that's incredibly fulfilling."</div>
+            <div class="testi-text">"Joining DStressHub was the best career decision. Every day I help people rediscover joy, that's incredibly fulfilling."</div>
             <div class="testi-author">
               <div class="testi-avatar">A</div>
               <div>
@@ -179,20 +179,12 @@ export async function careersPage() {
         </div>
         <div class="faq-list reveal up">
           <div class="faq-item">
-            <div class="faq-q">Is remote work available? <span class="faq-icon">+</span></div>
-            <div class="faq-a"><p>Yes! We offer remote and hybrid opportunities for most roles. Our team works across India with flexible schedules.</p></div>
-          </div>
-          <div class="faq-item">
             <div class="faq-q">Are freshers eligible? <span class="faq-icon">+</span></div>
             <div class="faq-a"><p>Absolutely. We value enthusiasm and willingness to learn. Training and mentorship are provided for all new team members.</p></div>
           </div>
           <div class="faq-item">
             <div class="faq-q">Will training be provided? <span class="faq-icon">+</span></div>
             <div class="faq-a"><p>Yes. Every team member goes through our comprehensive laughter therapy certification and facilitation training program.</p></div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q">Is part-time work available? <span class="faq-icon">+</span></div>
-            <div class="faq-a"><p>We offer part-time and freelance opportunities for facilitators and content creators. Reach out to discuss options.</p></div>
           </div>
         </div>
       </div>

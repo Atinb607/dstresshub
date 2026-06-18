@@ -163,21 +163,27 @@ export function initRouter() {
     const hash = link.getAttribute('href')
     if (hash === '#') return
 
-    // If we're on the homepage, smooth scroll
-    if (window.location.pathname === '/') {
-      e.preventDefault()
+    // If the target element exists in the current DOM, smooth scroll to it directly
+    try {
       const target = document.querySelector(hash)
-      if (target) target.scrollIntoView({ behavior: 'smooth' })
+      if (target) {
+        e.preventDefault()
+        target.scrollIntoView({ behavior: 'smooth' })
+        return
+      }
+    } catch (err) {
+      // Catch syntax errors from invalid selectors
     }
-    // If we're NOT on the homepage, navigate home then scroll
-    else {
-      e.preventDefault()
-      navigate('/')
-      setTimeout(() => {
+
+    // If target is not on current page, navigate to home then scroll
+    e.preventDefault()
+    navigate('/')
+    setTimeout(() => {
+      try {
         const target = document.querySelector(hash)
         if (target) target.scrollIntoView({ behavior: 'smooth' })
-      }, 400)
-    }
+      } catch (err) {}
+    }, 400)
   })
 
   // Initial render
