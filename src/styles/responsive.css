@@ -1,0 +1,38 @@
+/* ============================================================
+   RESPONSIVE OVERRIDES
+   ============================================================ */
+
+/* Utility container */
+.max-w { max-width: 1200px; margin: auto; padding: 0 72px; }
+
+/* Sticky Mobile CTA Bar */
+.mobile-cta-bar { display: none; }
+
+@media (max-width: 768px) {
+  .max-w { padding: 0 24px; }
+  
+  .mobile-cta-bar {
+    display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 950;
+    background: var(--bg-dark); border-top: 1px solid rgba(201,168,76,.15); padding: 0;
+  }
+  
+  .mcta-btn {
+    flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
+    padding: 12px 8px; text-decoration: none; font-size: .65rem; letter-spacing: .1em; text-transform: uppercase;
+    font-weight: 500; transition: background .25s; font-family: 'Jost', sans-serif;
+  }
+  
+  .mcta-wa { color: white; background: #25D366; }
+  .mcta-call { color: var(--gold); background: var(--bg-mid); }
+  .mcta-corp { color: var(--text-light); background: var(--bg-strip); }
+  .mcta-btn svg { flex-shrink: 0; }
+  
+  body { padding-bottom: 72px; }
+  
+  #wa-btn { bottom: 96px; }
+}
+
+/* Touch targets */
+@media (max-width: 768px) {
+  button, a { min-height: 44px; min-width: 44px; }
+}

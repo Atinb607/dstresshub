@@ -1,0 +1,28 @@
+/* ============================================================
+   CORPORATE WELLNESS PAGE STYLES
+   ============================================================ */
+
+.corp-hero { height: 65vh; min-height: 480px; background: var(--bg-dark); position: relative; overflow: hidden; display: flex; align-items: center; }
+.corp-hero-bg {
+  position: absolute; inset: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(90,94,58,.15) 0%, transparent 50%),
+              radial-gradient(circle at 30% 70%, rgba(201,168,76,.1) 0%, transparent 50%);
+}
+.corp-hero-inner { position: relative; z-index: 2; max-width: 1200px; margin: auto; padding: 0 72px; width: 100%; }
+.corp-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 5vw, 5rem); font-weight: 300; color: var(--text-light); margin-bottom: 24px; }
+
+.corp-stats { background: var(--bg-light); padding: 80px 0; }
+.corp-programs-section { background: var(--bg-dark); padding: 120px 0; }
+
+.corp-enquiry-section { background: var(--bg-light); padding: 120px 0; }
+.corp-enquiry-form { max-width: 640px; margin: 48px auto 0; background: white; padding: 48px; border-radius: 2px; box-shadow: 0 8px 40px rgba(0,0,0,.06); }
+.corp-enquiry-form .form-group { margin-bottom: 24px; }
+.corp-enquiry-form label { display: block; font-size: .72rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 500; color: var(--text-dark); margin-bottom: 8px; }
+.corp-enquiry-form input, .corp-enquiry-form select, .corp-enquiry-form textarea { width: 100%; padding: 14px 18px; border: 1px solid var(--cream-dark); border-radius: 2px; font-family: 'Jost', sans-serif; font-size: .9rem; background: white; color: var(--text-dark); transition: border-color .25s; outline: none; }
+.corp-enquiry-form input:focus, .corp-enquiry-form select:focus, .corp-enquiry-form textarea:focus { border-color: var(--gold); }
+.corp-enquiry-form textarea { min-height: 120px; resize: vertical; }
+
+@media (max-width: 768px) {
+  .corp-hero-inner { padding: 0 24px; }
+  .corp-enquiry-form { padding: 32px 24px; }
+}

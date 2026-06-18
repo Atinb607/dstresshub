@@ -1,12 +1,18 @@
 {
-  "name": "laughlife-website",
+  "name": "dstresshub",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "npx serve .",
-    "build": "echo 'Static site - no build needed'"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.0",
     "@vercel/analytics": "^2.0.1"
+  },
+  "devDependencies": {
+    "vite": "^6.3.0"
   }
 }
