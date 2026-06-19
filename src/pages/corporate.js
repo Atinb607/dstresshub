@@ -4,6 +4,8 @@ import { sectionHeader } from '../components/section-header.js'
 import { initRevealAnimations, initCounterAnimations } from '../utils/animations.js'
 import { refreshCursorHovers } from '../components/cursor.js'
 import { waLink } from '../utils/helpers.js'
+import { updateSEO, injectBreadcrumbs } from '../utils/seo.js'
+
 
 export async function corporatePage() {
   const html = `
@@ -131,6 +133,13 @@ export async function corporatePage() {
   `
 
   const init = () => {
+    updateSEO({
+      title: 'Corporate Wellness Programs | DeStress Hub',
+      description: 'Transform your workplace with DeStress Hub corporate wellness programs. Laughter therapy, stress management workshops, emotional intelligence training, and employee engagement initiatives for teams of all sizes.',
+      path: '/corporate'
+    })
+    injectBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Corporate Wellness' }])
+
     initNavbar()
     initRevealAnimations()
     initCounterAnimations()

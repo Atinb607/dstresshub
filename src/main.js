@@ -23,6 +23,9 @@ import { initCursor } from './components/cursor.js'
 import { renderWAButton, initWAButton } from './components/wa-button.js'
 import { renderMobileCTA } from './components/mobile-cta.js'
 
+/* ---- SEO & Structured Data ---- */
+import { injectStructuredData } from './utils/seo.js'
+
 /* ---- Page Modules ---- */
 import { homePage } from './pages/home.js'
 import { careersPage } from './pages/careers.js'
@@ -72,9 +75,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Custom cursor
   initCursor()
 
+  // Inject Organization + WebSite structured data
+  injectStructuredData()
+
   // Start router
   initRouter()
 
   // Initialize Vercel Analytics
   inject()
 })
+

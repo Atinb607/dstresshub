@@ -4,6 +4,7 @@ import { initRevealAnimations } from '../utils/animations.js'
 import { refreshCursorHovers } from '../components/cursor.js'
 import { getJobBySlug } from '../supabase.js'
 import { waLink } from '../utils/helpers.js'
+import { updateSEO, injectBreadcrumbs } from '../utils/seo.js'
 
 export async function jobDetailPage(params) {
   const job = await getJobBySlug(params.slug)
@@ -89,6 +90,12 @@ export async function jobDetailPage(params) {
   `
 
   const init = () => {
+    updateSEO({
+      title: `${job.title} | Careers at DeStress Hub`,
+      description: job.description ? job.description.substring(0, 160) : 'View this open position at DeStress Hub and apply to join our wellness team.',
+      path: `/careers/job/${job.slug}`
+    })
+    injectBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Careers', url: '/careers' }, { name: job.title }])
     initNavbar()
     initRevealAnimations()
     refreshCursorHovers()

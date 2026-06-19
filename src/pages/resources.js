@@ -3,6 +3,7 @@ import { renderFooter } from '../components/footer.js'
 import { sectionHeader } from '../components/section-header.js'
 import { initRevealAnimations } from '../utils/animations.js'
 import { refreshCursorHovers } from '../components/cursor.js'
+import { updateSEO, injectBreadcrumbs } from '../utils/seo.js'
 
 export async function resourcesPage() {
   const html = `
@@ -32,6 +33,12 @@ export async function resourcesPage() {
   `
 
   const init = () => {
+    updateSEO({
+      title: 'Wellness Resources | DeStress Hub',
+      description: 'Explore free wellness resources, articles, and guides from DeStress Hub. Learn about stress management, laughter therapy benefits, and workplace wellbeing strategies.',
+      path: '/resources'
+    })
+    injectBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Resources' }])
     initNavbar()
     initRevealAnimations()
     refreshCursorHovers()

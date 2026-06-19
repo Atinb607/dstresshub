@@ -3,6 +3,8 @@
  * Uses History API for clean URLs with popstate handling
  */
 
+import { trackPageView } from './utils/seo.js'
+
 let routes = []
 let currentCleanup = null
 
@@ -127,6 +129,9 @@ async function render(path) {
     // Initialize page interactivity
     if (result.init) result.init()
     if (result.cleanup) currentCleanup = result.cleanup
+
+    // Track page view in Google Analytics 4
+    trackPageView(path, document.title)
   } catch (err) {
     console.error('Router error:', err)
     app.innerHTML = '<div style="padding:200px 72px;text-align:center;"><h1 style="font-family:Cormorant Garamond,serif;font-size:2rem;color:var(--gold);">Something went wrong</h1></div>'

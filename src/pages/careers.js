@@ -5,6 +5,8 @@ import { initRevealAnimations } from '../utils/animations.js'
 import { refreshCursorHovers } from '../components/cursor.js'
 import { getPublishedJobs } from '../supabase.js'
 import { waLink } from '../utils/helpers.js'
+import { updateSEO, injectBreadcrumbs } from '../utils/seo.js'
+
 
 export async function careersPage() {
   // Fetch jobs dynamically
@@ -194,6 +196,13 @@ export async function careersPage() {
   `
 
   const init = () => {
+    updateSEO({
+      title: 'Careers at DeStress Hub | Join Our Wellness Team',
+      description: 'Join DeStress Hub and help build happier, healthier workplaces. Explore open positions in wellness facilitation, program coordination, and more.',
+      path: '/careers'
+    })
+    injectBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Careers' }])
+
     initNavbar()
     initRevealAnimations()
     refreshCursorHovers()

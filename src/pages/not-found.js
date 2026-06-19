@@ -1,6 +1,7 @@
 import { renderNavbar, initNavbar } from '../components/navbar.js'
 import { renderFooter } from '../components/footer.js'
 import { refreshCursorHovers } from '../components/cursor.js'
+import { updateSEO } from '../utils/seo.js'
 
 export async function notFoundPage() {
   const html = `
@@ -17,6 +18,11 @@ export async function notFoundPage() {
   `
 
   const init = () => {
+    updateSEO({
+      title: '404 — Page Not Found | DeStress Hub',
+      description: 'The page you are looking for could not be found. Return to DeStress Hub homepage.',
+      path: '/404'
+    })
     initNavbar()
     refreshCursorHovers()
   }

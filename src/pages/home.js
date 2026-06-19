@@ -6,6 +6,8 @@ import { initParallax, cleanupParallax, initGalleryDrag } from '../utils/paralla
 import { refreshCursorHovers } from '../components/cursor.js'
 import { waLink, toast } from '../utils/helpers.js'
 import { submitLead } from '../supabase.js'
+import { updateSEO, injectBreadcrumbs } from '../utils/seo.js'
+
 
 import tanishqLogo from './tanishq-seeklogo.svg'
 import rootsLogo from './roots-analysis-logo.png'
@@ -818,6 +820,13 @@ export async function homePage() {
   `
 
   const init = () => {
+    updateSEO({
+      title: 'DeStress Hub | Corporate Wellness, Employee Wellbeing & Laughter Wellness',
+      description: 'DeStress Hub helps organizations improve employee wellbeing through stress management workshops, laughter wellness sessions, emotional intelligence training, employee engagement programs and corporate wellness initiatives.',
+      path: '/'
+    })
+    injectBreadcrumbs([{ name: 'Home' }])
+
     initNavbar()
     initRevealAnimations()
     initCounterAnimations()

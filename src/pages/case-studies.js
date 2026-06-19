@@ -4,6 +4,7 @@ import { sectionHeader } from '../components/section-header.js'
 import { initRevealAnimations } from '../utils/animations.js'
 import { refreshCursorHovers } from '../components/cursor.js'
 import { waLink } from '../utils/helpers.js'
+import { updateSEO, injectBreadcrumbs } from '../utils/seo.js'
 
 export async function caseStudiesPage() {
   const html = `
@@ -90,6 +91,12 @@ export async function caseStudiesPage() {
   `
 
   const init = () => {
+    updateSEO({
+      title: 'Case Studies | DeStress Hub Success Stories',
+      description: 'Discover how DeStress Hub has transformed workplace wellness across organizations. Real case studies showcasing the impact of laughter therapy and corporate wellness programs.',
+      path: '/case-studies'
+    })
+    injectBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Case Studies' }])
     initNavbar()
     initRevealAnimations()
     refreshCursorHovers()
